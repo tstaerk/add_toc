@@ -138,7 +138,7 @@ int main (int argc, char *argv[])
     toc=bodynode.firstChild().cloneNode(false);
     bodynode.insertBefore(firsttextnode(bodynode,0).cloneNode(false),bodynode.firstChild());
     firsttextnode(bodynode,0).setNodeValue(output(bodynode,false));
-    kDebug() << mydom.toByteArray();
+    std::cout << mydom.toByteArray().data() << std::endl;
     kDebug() << firsttextnode(bodynode,0).nodeValue();
   } 
   else std::cout << "addtoc usage: addtoc <htmlfile>" << std::endl;
