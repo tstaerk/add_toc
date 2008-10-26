@@ -129,9 +129,6 @@ int main (int argc, char *argv[])
     tidycontent=tidy(inputfilecontent.data());
     QDomDocument mydom=QDomDocument();
     mydom.setContent(tidycontent);
-    kDebug() << mydom.elementsByTagName("html").at(0).nodeName();
-    QDomNode htmlnode=mydom.elementsByTagName("html").at(0);
-    kDebug() << htmlnode.firstChild().nodeName();
     QDomNode bodynode(mydom.elementsByTagName("body").at(0));
     kDebug() << bodynode.firstChild().nodeName();
     QDomNode node=bodynode; 
