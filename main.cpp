@@ -130,16 +130,12 @@ int main (int argc, char *argv[])
     QDomDocument mydom=QDomDocument();
     mydom.setContent(tidycontent);
     QDomNode bodynode(mydom.elementsByTagName("body").at(0));
-    kDebug() << bodynode.firstChild().nodeName();
-    QDomNode node=bodynode; 
-    kDebug() << output(bodynode,false);
-    kDebug() << "this is the domdocument" << mydom.toByteArray();
+    output(bodynode,false);
     QDomNode toc;
     toc=bodynode.firstChild().cloneNode(false);
     bodynode.insertBefore(firsttextnode(bodynode,0).cloneNode(false),bodynode.firstChild());
     firsttextnode(bodynode,0).setNodeValue(output(bodynode,false));
     std::cout << mydom.toByteArray().data() << std::endl;
-    kDebug() << firsttextnode(bodynode,0).nodeValue();
   } 
   else std::cout << "addtoc usage: addtoc <htmlfile>" << std::endl;
 }
