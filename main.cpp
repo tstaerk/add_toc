@@ -1,5 +1,5 @@
 /*
-add_toc (c) 2006-2008 by Thorsten Staerk
+add_toc (c) 2006-2009 by Thorsten Staerk
 */
 #include <iostream>
 #include <KApplication>
@@ -107,7 +107,7 @@ int main (int argc, char *argv[])
 			"0.1",
 			ki18n("Adds a Table Of Content to an html file"),
 			KAboutData::License_GPL,
-			ki18n("(c) 2006-2008 by Thorsten Staerk"),
+			ki18n("(c) 2006-2009 by Thorsten Staerk"),
 			ki18n("This is addtoc"),
 			"http://www.staerk.de/thorsten",
 			"bugs@staerk.de");
