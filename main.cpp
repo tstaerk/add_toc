@@ -134,7 +134,7 @@ int main (int argc, char *argv[])
     QDomNode toc;
     toc=bodynode.firstChild().cloneNode(false);
     bodynode.insertBefore(firsttextnode(bodynode,0).cloneNode(false),bodynode.firstChild());
-    firsttextnode(bodynode,0).setNodeValue(output(bodynode,false));
+    firsttextnode(bodynode,0).setNodeValue(QString("Table of Content:\n").append(output(bodynode,false)));
     std::cout << mydom.toByteArray().data() << std::endl;
   } 
   else std::cout << "addtoc usage: addtoc <htmlfile>" << std::endl;
