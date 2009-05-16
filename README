@@ -2,8 +2,8 @@ add_toc adds a table of content an html file.
 
 Set up your KDE 4 environment like this:
 http://techbase.kde.org/index.php?title=Getting_Started/Build/KDE4
-You need to have tidy installed, for SUSE, you can do this with
-yast -i tidy-devel
+You need to have tidy installed, for SUSE 11.1, you can do this with
+yast -i libtidy-devel
 
 Compile add_toc like this:
 cmake . && make 
