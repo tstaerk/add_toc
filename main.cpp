@@ -11,8 +11,8 @@ add_toc (c) 2006-2009 by Thorsten Staerk
 #include <QFile> 
 #include <QDomDocument>
 #include <QTextEdit>
-#include <tidy/tidy.h>
-#include <tidy/buffio.h>
+#include <tidy.h>
+#include <buffio.h>
 #include <stdio.h>
 #include <errno.h>
 
